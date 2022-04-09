@@ -212,9 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 #hero .hero-container {
-  position: absolute;
-  top: 12%;
-  left: 20%;
+  position: relative;
   z-index: 2;
   min-width: 300px;
 }
