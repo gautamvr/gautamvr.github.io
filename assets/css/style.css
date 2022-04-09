@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Gautam_bg.jpeg") top center;
+  background: url("../img/Gautam_bg.jpeg") center center;
   background-size: cover;
 }
 #hero:before {
@@ -212,7 +212,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 #hero .hero-container {
-  position: relative;
+  position: absolute;
+  top: 12%;
+  left: 20%;
   z-index: 2;
   min-width: 300px;
 }
