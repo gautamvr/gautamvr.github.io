@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Gautam_bg.jpeg") center center;
+  background: url("../img/Gautam_bg.jpeg") center left;
   background-size: cover;
 }
 #hero:before {
@@ -216,6 +216,20 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   min-width: 300px;
 }
+
+.hero-container button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.hero-container button[type=submit]:hover {
+  background: #37b3ed;
+}
+
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
@@ -272,6 +286,15 @@ section {
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+.section-title h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   color: #173b6c;
 }
@@ -407,6 +430,14 @@ section {
   margin-bottom: 20px;
   color: #050d18;
 }
+.resume .resume-title h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -490,10 +521,14 @@ section {
   overflow: hidden;
   z-index: 1;
 }
+.portfolio .portfolio-wrap img {
+  width: 300px;
+  height: 300px;
+}
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -508,7 +543,7 @@ section {
   right: 0;
   bottom: -60px;
   z-index: 3;
-  position: absolute;
+  position: relative;
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
@@ -538,6 +573,8 @@ section {
   opacity: 1;
   bottom: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -951,4 +988,9 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc
 }
