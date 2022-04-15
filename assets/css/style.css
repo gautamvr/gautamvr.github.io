@@ -112,6 +112,21 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+#header .profile button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size:16px;
+  position: relative;
+  left: 19%;
+  top:10px;
+}
+
 #main {
   margin-left: 300px;
 }
