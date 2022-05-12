@@ -369,7 +369,10 @@
                   Used node.js with express to create REST APIs with authenticated endpoints using JWT and hosted on EC2 instances under an ALB with autoscaling enabled.
                 </li>
                 <li>
-                  RDS is used as the main database provisioned with read replicas. Other AWS services like S3, SES, CodeDeploy, Lambda, CloudWatch.
+                  RDS is used as the main database server with MySQL provisioned with read replicas. Other AWS services like S3, SES, CodeDeploy, Lambda, CloudWatch.
+                </li>
+                <li>
+                  Web application is integrated with CICD pipeline which runs tests and deploys the application using CodeDeploy to the servers along with other AWS services like S3, SES, Lambda, CloudWatch.
                 </li>
                 <li>
                   Created the infrastructure with Cloudformation (IaC) for easier reuse of stacks and integrated with CI/CD.
